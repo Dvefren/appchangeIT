@@ -8,7 +8,7 @@
 
 .background{ 
     background: var(--secondary-4, #EDFCF3);
-    height: 100dvh;
+    height: auto;
     width: 100dvw;
 }
 
@@ -53,11 +53,22 @@
     justify-content: center;
 }
 
+.publication-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre publicaciones */
+    justify-content: center; /* Centra las publicaciones horizontalmente */
+}
+
 .publication{
     height: 510px;
     width: 100%;
     color: #000;
     font-family: "Poppins", sans-serif;
+    width: 100%; /* O ajusta según el diseño deseado */
+    max-width: 600px; /* Por ejemplo, ajusta el máximo ancho de cada publicación */
+    border-radius: 8px; /* Borde redondeado opcional */
+    margin-bottom: 150px; /* Espacio entre publicaciones */
 }
 
 .separation-1{
@@ -66,32 +77,87 @@
     background-color: #042F1F;
 }
 
-.user-pic{
-    width: 40px;
-    height: 40px;
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px; /* Espacio alrededor de la información del usuario */
+}
+
+.user-pic {
+    width: 45px;
+    height: 45px;
     flex-shrink: 0;
-    border-radius: 40px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;   
+    border-radius: 50%; /* Aseguramos que la imagen sea circular */
+    margin-right: 10px; /* Espacio entre la imagen y el nombre */
+    overflow: hidden; /* Aseguramos que la imagen no se salga del contenedor */
+}
+
+.user-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
 }
 
 .user{
     display: flex;
-    width: 92px;
+    width: 100;
     height: 31px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
 }
 
-.image-product{
+.image-product {
     background-color: #16B36A;
-    width: 390px;
-    height: 315px;
-    flex-shrink: 0;
+    width: 100%; /* Ajustamos al 100% del contenedor */
+    height: 400px;
+    max-width: 390px; /* Limite máximo de ancho */
+    margin: 0 auto; /* Centramos la imagen */
 }
 
-.separation-2{
+.image-product img {
+    object-fit: fill;
     width: 100%;
-    height: 2px;
-    background-color: #042F1F;
+    height: 400px;
+    display: block;
+}
+
+.interactions {
+    display: flex;
+    justify-content: space-between; /* Asegura que haya espacio entre los íconos de izquierda y derecha */
+    align-items: center;
+    margin: 10px 0; /* Espacio alrededor de las interacciones */
+    padding: 0 20px; /* Añadir padding para que los íconos no queden pegados al borde */
+}
+
+.interactions .left {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos de "like" y "exchange" */
+}
+
+.like, .exchange, .bookmark {
+    cursor: pointer; /* Añadir cursor de puntero para indicar que son interactivos */
+}
+
+.product-name, .product-description{
+    margin: 10px 0; /* Espacio entre secciones */
+    text-align: left;
+    padding: 0 20px;
+}
+
+.product-name h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-description p {
+    font-size: 14px;
+    color: #555;
+}
+
+.categories p, .price p {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #16B36A;
 }

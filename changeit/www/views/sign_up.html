@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <!--Links de estilos-->
+
+    <link rel="stylesheet" href="../css/forms.css">
+    
+    <!--Titulo de pagina-->
+    <title>sign_up</title>
+
+</head>
+<body>
+
+    <!--Capa de fondo-->
+
+    <div class="fondo">
+
+        <!--Capa titulo-->
+
+        <div class="title">
+            <span class="change">change</span>
+            <span class="IT"> IT</span>
+        </div>
+
+        <!--Capa subitulo-->
+
+        <div class="subtitle">
+            <span class="s1">Hi there, </span>
+            <span class="s2">Create<span class="s3"> your</span></span>
+            <span class="s4">account<span class="s5"> here</span>.</span>
+        </div>
+
+        <!--Imagen-->
+        <div class="imagen">
+            <img src="../img/signup.jpeg" alt="">
+        </div>
+
+        <!--Form de sign up-->
+        <div class="forms-section">
+            <div class="form-group-user">
+                <input type="text" id="user" placeholder=" " />
+                <label for="user">Username</label>
+            </div>
+            <div class="form-group-email">
+                <input type="email" id="email" placeholder=" " />
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group-password">
+                <input type="password" id="password" placeholder=" " />
+                <label for="password">Password</label>
+            </div>
+            <button class="button-register">Sign Up</button>
+        </div>
+        
+
+    </div>
+    
+    <script>
+        document.querySelectorAll('.form-group-user, .form-group-email, .form-group-password').forEach(group => {
+            group.addEventListener('click', () => {
+            group.querySelector('input').focus();
+            });
+        });
+
+    </script>
+
+</body>
+</html>

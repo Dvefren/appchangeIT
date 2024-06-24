@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/index.css">
 
         <!--Titulo de pagina-->
-        <title>Hello World</title>
+        <title>start</title>
 
     </head>
     <body>
@@ -68,7 +68,7 @@
 
             <!--Boton para redirigir al registro-->
 
-          <button class="button-container">Get Started</button>
+          <button class="button-container" onclick="redirect()">Get Started</button>
 
         </div>
 
@@ -89,6 +89,12 @@
               delay: 2500
             }
           });
+        </script>
+
+        <script>
+            function redirect(){
+                window.location.href = 'views/sign_up.html'
+            }
         </script>
 
     </body>

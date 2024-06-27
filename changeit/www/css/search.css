@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background {
+    background: var(--secondary-4, #EDFCF3);
+    height: 100%;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiado de space-between a flex-start */
+    align-items: center;
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Añadido para asegurar que los elementos se coloquen verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Añadido margen superior para separar el contenedor del borde superior */
+}
+
+#search-form {
+    width: 280.341px;
+    height: 48.897px;
+    border-radius: 20px;
+    background: rgb(4, 47, 31);
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px; /* Agregar margen superior de 55px */
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+#search-form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#search-input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 17px;
+    height: 100%;
+    width: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: rgba(4, 47, 31, 0.64);
+    color: #ffffff;
+}
+
+.search-button {
+    border: none;
+    border-radius: 17px;
+    height: 100%;
+    background: none;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button svg {
+    fill: none;
+    stroke: #fff;
+}
+
+.classes {
+    width: 100dvw;
+    height: 59px;
+    flex-shrink: 0;
+    background: var(--secondary-3, #D3F8E0);
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px; /* Mantener margen superior para separación del formulario */
+}
+
+.class-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.class-button {
+    width: 150px;
+    height: 59px;
+    flex-shrink: 0;
+    background: var(--primary, #D3F8E0);
+    border: none;
+    color: #16B36A;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* Adding to your existing CSS */
+
+/* CSS for the .publication-images container */
+.publication-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2px; /* Reduced gap between items */
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* CSS for individual publication items */
+.publication-item {
+    background: #fff;
+    border: 1px solid #042F1F; /* Border color and width */
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publication-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Example of different sizes for publication items */
+.publication-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.publication-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}

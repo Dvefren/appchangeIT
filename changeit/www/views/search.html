@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <!--Links de estilos-->
+
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!--Titulo de pagina-->
+
     <title>Document</title>
+
 </head>
 <body>
+
+    <div class="background">
+
+        <div class="content-container">
+            <div class="search">
+                <form method="get" id="search-form">
+                    <fieldset>
+                        <input type="text" id="search-input" placeholder="Buscar" />
+                        <button class="search-button" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                                <path d="M14 14L16.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                <path d="M16.4333 18.5252C15.8556 17.9475 15.8556 17.0109 16.4333 16.4333C17.0109 15.8556 17.9475 15.8556 18.5252 16.4333L21.5667 19.4748C22.1444 20.0525 22.1444 20.9891 21.5667 21.5667C20.9891 22.1444 20.0525 22.1444 19.4748 21.5667L16.4333 18.5252Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M16 9C16 5.13401 12.866 2 9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="classes">
+            <div class="class-container">
+                <button class="class-button">#Home</button>
+                <button class="class-button">#Electronics</button>
+                <button class="class-button">#School</button>
+                <button class="class-button">#Sports</button>
+                <button class="class-button">#Books</button>
+            </div>
+        </div>
+
+        <div class="publication-images">
+            <div class="publication-item small">
+                <img src="../img/producto-1.jpg" alt="Publication 1">
+            </div>
+            <div class="publication-item medium">
+                <img src="../img/producto-2.jpg" alt="Publication 2">
+            </div>
+            <div class="publication-item small">
+                <img src="../img/producto-3.jpg" alt="Publication 1">
+            </div>
+            <div class="publication-item medium">
+                <img src="../img/producto-4.jpg" alt="Publication 2">
+            </div>
+            <div class="publication-item small">
+                <img src="../img/producto-5.jpg" alt="Publication 1">
+            </div>
+            <div class="publication-item small">
+                <img src="../img/producto-1.jpg" alt="Publication 1">
+            </div>
+            <div class="publication-item small">
+                <img src="../img/producto-5.jpg" alt="Publication 1">
+            </div>
+            <div class="publication-item medium">
+                <img src="../img/producto-6.jpg" alt="Publication 2">
+            </div>  
+            <!-- Add more publication items as needed -->
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+
+                <div class="home">
+                    <a href="../views/home.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                            <path d="M8.99944 22L8.74881 18.4911C8.61406 16.6046 10.1082 15 11.9994 15C13.8907 15 15.3848 16.6046 15.2501 18.4911L14.9994 22" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M2.35151 13.2135C1.99849 10.9162 1.82198 9.76763 2.25629 8.74938C2.69059 7.73112 3.65415 7.03443 5.58126 5.64106L7.02111 4.6C9.41841 2.86667 10.6171 2 12.0001 2C13.3832 2 14.5818 2.86667 16.9791 4.6L18.419 5.64106C20.3461 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6487 13.2135L21.3477 15.1724C20.8473 18.4289 20.597 20.0572 19.4291 21.0286C18.2612 22 16.5538 22 13.1389 22H10.8613C7.44646 22 5.73903 22 4.57112 21.0286C3.40321 20.0572 3.15299 18.4289 2.65255 15.1724L2.35151 13.2135Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="search">
+                    <a href="search.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                            <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="add">
+                    <a href="add.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                            <path d="M12 8V16M16 12L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="bookmarks">
+                    <a href="bookmarks.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                            <path d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="profile">
+                    <a href="profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                            <path d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     
+    <script src="../js/scroll.js"></script>
+    <script src="../js/infinite.js"></script>
+
 </body>
 </html>

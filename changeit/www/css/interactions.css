@@ -1,0 +1,17 @@
+.like-icon {
+    transition: fill 0.5s ease;
+}
+
+.like-icon.liked {
+    fill: #16B36A;
+    stroke: #16B36A;
+}
+
+.mark-icon{
+    transition: fill 0.5s ease;
+}
+
+.mark-icon.marked{
+    fill: #16B36A;
+    stroke: #16B36A;
+}

@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="../css/search.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/add.css">
+
 
     <!--Titulo de pagina-->
 
@@ -76,6 +78,7 @@
             <!-- Add more publication items as needed -->
         </div>
 
+
         <div class="footer">
             <div class="footer-container">
 
@@ -97,12 +100,12 @@
                     </a>
                 </div>
 
-                <div class="add">
-                    <a href="add.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
-                            <path d="M12 8V16M16 12L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" stroke-width="1.5" />
-                        </svg>
+                <div class="add" id="openModalBtn">
+                    <a href="javascript:void(0);">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#fff" fill="none">
+                        <path d="M12 8V16M16 12L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" stroke-width="1.5" />
+                      </svg>
                     </a>
                 </div>
 
@@ -126,10 +129,42 @@
             </div>
         </div>
 
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+        
+                <!-- Vista previa de la imagen -->
+                <div id="imagePreview"></div>
+        
+                <!-- Mover el input del archivo antes del h2 -->
+                <label for="productImage" class="custom-file-upload">
+                    <input type="file" id="productImage" name="productImage" accept="image/*" required>
+                    Select Image
+                </label>
+        
+                <form id="productForm">
+                    <label for="productName">Product:</label>
+                    <input type="text" id="productName" name="productName" required>
+        
+                    <label for="productInfo">Product Information:</label>
+                    <textarea id="productInfo" name="productInfo" required></textarea>
+        
+                    <label for="productPrice">Price:</label>
+                    <input type="number" id="productPrice" name="productPrice" required>
+        
+                    <label for="productClass">Product classes:</label>
+                    <input type="text" id="productClass" name="productClass" required>
+        
+                    <button type="submit">Share</button>
+                </form>
+            </div>
+        </div>
+
     </div>
     
     <script src="../js/scroll.js"></script>
     <script src="../js/infinite.js"></script>
+    <script src="../js/add.js"></script>
 
 </body>
 </html>

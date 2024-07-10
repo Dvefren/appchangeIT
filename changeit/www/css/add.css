@@ -1,0 +1,107 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-content {
+  background: var(--secondary-4, #EDFCF3);  
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  position: relative; /* Asegura que los elementos internos respeten el posicionamiento relativo */
+  color: #042F1F;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea, button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 13px;
+  background: #e7e7e7;
+  border-style: none;
+  color: #042F1F; /* Ajusta el color del texto según tu diseño */
+}
+
+button {
+  margin-top: 20px; /* Espacio adicional arriba del botón */
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 17px;
+  background: var(--secondary-1, #16B36A);
+  cursor: pointer;
+  border-style: none;
+  color: var(--Principal, #042F1F);
+  font-size: 20px;
+  font-weight: 600;
+  display: block; /* Asegura que el botón ocupe el ancho completo del contenedor */
+  margin-left: auto; /* Centra horizontalmente el botón */
+  margin-right: auto; /* Centra horizontalmente el botón */
+}
+
+button:hover {
+  background-color: rgb(59, 127, 62);
+}
+
+#imagePreview {
+  margin-top: 10px; /* Espacio sobre la vista previa de la imagen */
+  width: 100%; /* Ajusta el ancho según necesites */
+  height: auto; /* Ajusta la altura según necesites */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+#imagePreview img {
+  max-width: 100%;
+  max-height: 300px; /* Altura máxima de la imagen previa */
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border-radius: 8px; /* Añade bordes redondeados a la imagen */
+}
+
+.custom-file-upload {
+  display: block;
+  width: 100%;
+  background: var(--secondary-1, #16B36A);
+  color: var(--Principal, #042F1F);
+  text-align: center;
+  padding: 10px;
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}

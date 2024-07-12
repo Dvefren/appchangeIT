@@ -47,7 +47,7 @@ input, textarea, button {
   margin-top: 5px;
   padding: 10px;
   font-size: 13px;
-  background: #e7e7e7;
+  background: #EDFCF3;
   border-style: none;
   color: #042F1F; /* Ajusta el color del texto según tu diseño */
 }
@@ -99,7 +99,7 @@ button:hover {
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .custom-file-upload input[type="file"] {
